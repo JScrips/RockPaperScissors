@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>JScrips || Rock/Paper/Scissors</title>
+  </head>
+  <body class="backGroundFull bg-blue-900">
+    <div
+      class="
+        p-4
+        bg-gray-400
+        grid
+        place-items-center
+        inline-block
+        justify-center
+        rounded-2xl
+        border-2 border-black
+        flex
+        place-self-center
+      "
+    >
+      <header
+        class="font-mono text-7xl font-extrabold tracking-tight text-gray-900"
+      >
+        Rock, Paper, Scissors!
+      </header>
+    </div>
+
+    <div
+      class="
+        relative
+        top-5
+        mx-auto
+        rounded-xl
+        border-white border-8
+        bg-gray-700
+        w-72
+        h-52
+        text-center
+      "
+      id="scoreboard"
+    >
+      <div
+        id="user-label"
+        class="
+          text-xl text-white
+          bg-red-700
+          border-white border-2
+          rounded-lg
+          -left-7
+          top-20
+          p-1
+          float-left
+          relative
+        "
+      >
+        user
+      </div>
+      <div
+        id="computer-label"
+        class="
+          text-xl text-white
+          bg-red-700
+          border-white border-2
+          rounded-lg
+          p-1
+          -right-14
+          top-20
+          float-right
+          relative
+        "
+      >
+        computer
+      </div>
+      <span class="-top-3 -left-5 relative text-white text-9xl" id="user-score"
+        >0</span
+      ><span
+        class="-top-3 -right-3 relative text-white text-9xl"
+        id="computer-score"
+        >0</span
+      >
+    </div>
+
+    <div id="result">
+      <p class="text-center m-20 text-green-700 animate-pulse text-4xl">
+        Paper covers rock. You win!
+      </p>
+    </div>
+
+    <div
+      class="
+        m-20
+        container-sm
+        mx-auto
+        w-10/12
+        grid grid-cols-3
+        justify-items-center
+      "
+    >
+      <div class="choice">
+        <img
+          id="rock"
+          class="
+            w-56
+            hover:scale-150
+            transform
+            duration-1000
+            cursor-pointer
+            opacity-50
+            hover:opacity-100
+          "
+          src="images/Rock.jpg"
+          alt="rock"
+        />
+      </div>
+      <div class="choice inline-flex">
+        <img
+          id="paper"
+          class="
+            w-56
+            hover:scale-150
+            transform
+            duration-1000
+            cursor-pointer
+            opacity-50
+            hover:opacity-100
+          "
+          src="images/paper.jpg"
+          alt="paper"
+        />
+      </div>
+      <div class="choice">
+        <img
+          id="scissors"
+          class="
+            w-56
+            inline
+            hover:scale-150
+            transform
+            duration-1000
+            cursor-pointer
+            opacity-50
+            hover:opacity-100
+          "
+          src="images/scissors.jpg"
+          alt="scissors"
+        />
+      </div>
+    </div>
+
+    <p class="m-20 text-center animate-bounce text-white text-6xl">
+      Make Your Move
+    </p>
+    <script src="app.js"></script>
+  </body>
+</html>
